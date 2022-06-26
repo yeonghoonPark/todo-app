@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <title>ToDo-List</title>
+    <script defer src="./js/login.js"></script>
 </head>
 <body>
-    
+    <div class="wrap">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <h1 class="title">ToDo-List</h1>
+            </div>
+        </header>
+
+        <!-- LOGIN -->
+        <section class="login">
+            <div class="container">
+                <form class="login-form">
+                    <input type="text" required maxlength="15" placeholder="What is your name?">
+                    <input type="submit" value="Login">
+                </form>
+                <h2 class="welcome">Welcome, Jisung-Park</h2>
+            </div>
+        </section>
+
+        <!-- TODO -->
+        <section class="todo">
+            <div class="container">
+                <form class="todo-form">
+                    <input type="text" required placeholder="Write a To Do and press enter">
+                </form>
+                <ul class="todo-list">
+                    <li>
+                        <span>Wake Up</span>
+                        <button>Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WEATHER -->
+        <section class="weather">
+            <div class="container">
+                <div class="weather-info">
+                    <span>Seoul</span>
+                    <span>Cloud</span>
+                    <span>28.3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="proverb">
+                    <span>Time is gold.</span>
+                    <span>Albert Einstein</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
 </body>
 </html>
