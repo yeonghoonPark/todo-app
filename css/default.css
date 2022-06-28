@@ -34,3 +34,88 @@ img{
 .hidden{
     display: none;
 }
+
+.wrap{
+    width: 100%;
+}
+
+/* HEADER */
+.header{
+    margin: 0 auto;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.header .title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.header .clock{
+    position: fixed;
+    top: 5rem;
+    right: 4rem;
+    font-size: 1.5rem;
+}
+
+/* LOGIN */
+.login{
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.login-form input:nth-child(2){
+    padding: 0 0.5rem;
+    background: var(--color-white);
+    cursor: pointer;
+}
+
+.login .greetings{
+    font-size: 2rem;
+}
+
+/* TODO */
+.todo{
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.todo-form{
+    padding: 0.5rem;
+}
+
+.todo-list{
+    padding: 0.5rem;
+}
+
+.todo-list li{
+    padding: 0.5rem;
+}
+
+.todo-list li button{
+    padding: 0 0.5rem;
+    background: var(--color-white);
+    cursor: pointer;
+}
+
+/* WEATHER */
+.weather{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+}
+
+/* FOOTER */
+.footer{
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+}
+
+.proverb span:nth-child(2){
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+}

@@ -27,3 +27,4 @@ if(savedUser){
     loginForm.classList.remove(CLASSNAME_HIDDEN);
     loginForm.addEventListener('submit', onLogin);
 }
+
