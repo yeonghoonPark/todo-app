@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <title>ToDo-List</title>
     <script defer src="./js/login.js"></script>
     <script defer src="./js/background.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/todo.js"></script>
+    <script defer src="./js/proverb.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -16,7 +20,7 @@
         <header class="header">
             <div class="container">
                 <h1 class="title">T o D o - L i s t</h1>
-                <div class="clock">00:00:00</div>
+                <div class="clock"></div>
             </div>
         </header>
 
@@ -32,20 +36,12 @@
         </section>
 
         <!-- TODO -->
-        <section class="todo">
+        <section class="todo hidden">
             <div class="container">
                 <form class="todo-form">
                     <input type="text" required placeholder="Write a To Do & press enter">
                 </form>
-                <ul class="todo-list">
-                    <li>
-                        <span>Wake Up</span>
-                        <button>Delete</button>
-                    </li>
-                    <li>
-                        <span>Wake Up</span>
-                        <button>Delete</button>
-                    </li>
+                <ul class="todo-list">    
                 </ul>
             </div>
         </section>
@@ -54,9 +50,9 @@
         <section class="weather">
             <div class="container">
                 <div class="weather-info">
-                    <span>Seoul</span>
+                    <i class="fa-solid fa-location-dot"></i> <span>Seoul</span>
                     <span>Cloud</span>
-                    <span>28.3</span>
+                    <span>28.3°C</span>
                 </div>
             </div>
         </section>

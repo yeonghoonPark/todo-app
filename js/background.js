@@ -9,6 +9,6 @@ const imags = [
 
 const createImg = document.createElement('img');
 const backgroundImg = document.body.appendChild(createImg);
-
-backgroundImg.style.background = `url(./img/${imags[Math.floor(Math.random() * imags.length)]})`;
 backgroundImg.classList.add('background-img');
+backgroundImg.style.background = `url(./img/${imags[Math.floor(Math.random() * imags.length)]})`;
+

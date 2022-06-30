@@ -3,25 +3,26 @@
 const loginForm = document.querySelector('.login-form');
 const loginInput = document.querySelector('.login-form input:nth-child(1)');
 const greetings = document.querySelector('.greetings');
-
+const toDo = document.querySelector('.todo');
 const CLASSNAME_HIDDEN = 'hidden';
 const USER_KEY = 'user'; 
-
 const savedUser = localStorage.getItem(USER_KEY);
 
 const writeGreetings = (parameter)=>{ 
-    greetings.innerText = `Hello, ${parameter}`;
+    greetings.innerText = `Hello ${parameter}`;
 };
 
 const onLogin = (event)=>{
     event.preventDefault();
     const user = loginInput.value;
     loginForm.classList.add(CLASSNAME_HIDDEN);
+    toDo.classList.remove(CLASSNAME_HIDDEN);
     localStorage.setItem(USER_KEY, user);
     writeGreetings(user);
 };
 
 if(savedUser){
+    toDo.classList.remove(CLASSNAME_HIDDEN);
     writeGreetings(savedUser);
 }else{
     loginForm.classList.remove(CLASSNAME_HIDDEN);
